@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+
+                <div class="form-campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" placeholder="Nome completo" id="nome" minlength="4" pattern="[a-z\s]+$" required />
+                </div>
+
+                <div class="form-campo">
+                    <label for="">Digite seu cpf</label>
+                    <input type="tex" id="cpf" name="cpf"placeholder="CPF">
+                </div>
+
+                <div class="form-campo">
+                    <label for="telefone">Telefone Fixo</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="ex: (00)0000-0000">
+                </div>
+
+                <div class="form-campo">
+                    <label for="telefone">Celular</label>
+                    <input type="tel" id="celular" name="celular" placeholder="ex: (00)00000-0000">
+                </div>
+
+                <div class="form-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="ex:email@provedor.com">
+                </div>
+
+                <div class="form-campo">
+                    <label for="endereço">Digite seu endereço</label>
+                    <input type="tex" id="endereço" name="endereco" placeholder="ex:rua + numero + cidade + estado">
+                </div>
+
+                <div class="form-campo">
+                    <label for="CEP">Digite seu cep</label>
+                    <input type="tex" id="cep" name="cep" placeholder="ex:00.000-00"> 
+                </div>
+                <div>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_PT.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
